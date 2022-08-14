@@ -78,9 +78,9 @@ if (isset($_POST['submit'])){
             echo "Your file ".htmlspecialchars($_FILES['file']['name'])."has been uploaded<br><hr>";
             echo "Hello ".$_POST['name'];
 
-            $image = fopen($target_file, 'w') or die('File could not be displayed');
+            // $image = fopen($target_file, 'w') or die('File could not be displayed');
     
-            echo readfile($target_file);       
+            // echo readfile($target_file);       
         }
         else {
             echo "Sorry there was a problem uploading your file<br>";
